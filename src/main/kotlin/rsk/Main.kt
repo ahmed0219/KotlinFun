@@ -8,16 +8,13 @@ fun rsk.rsk.display()
 }*/
 @file:JvmName("DisplayFunctions")
 package rsk
+fun log (message: String,loglevel:Int=1){
+    println(message+loglevel)
+
+}
+@JvmOverloads
 fun main(args:Array<String>){
-    display("Hello World!")
+    log("Hello World!",2)
 }
-fun display (message:String,)
-{
-    println(message)
-
-}
-
-
-
 
 
